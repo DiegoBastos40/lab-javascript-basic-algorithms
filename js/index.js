@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
-const hacker1 = "Carlos";
+let hacker1 = "Carlos";
 console.log(`The driver's name is ${hacker1}`);
 
-const hacker2 = "Diego" ;
+let hacker2 = "Diego" ;
 
 console.log(`The navigator's name is ${hacker2}`);
 // Iteration 2: Conditionals
@@ -23,9 +23,17 @@ else {
 // Iteration 3: Loops
 
 
-console.log(`${hacker1[0].toUpperCase()}  ${hacker1[1].toUpperCase()}  ${hacker1[2].toUpperCase()} ${hacker1[3].toUpperCase()} ${hacker1[4].toUpperCase()} ${hacker1[5].toUpperCase()}  `);
 
-console.log(`${hacker2[4].toUpperCase()}  ${hacker2[3].toUpperCase()}  ${hacker2[2].toUpperCase()} ${hacker2[1].toUpperCase()} ${hacker2[0].toUpperCase()}   `);
+let lettersHacker = "";
+
+for (let i = hacker2.length - 1; i >=0; i--) {
+  
+  lettersHacker += hacker2[i] ;
+
+}
+
+console.log(lettersHacker.toUpperCase());
+ 
 
 let uppercasedName = ""
 
@@ -38,10 +46,10 @@ console.log (uppercasedName);
 
 
  
- if("hacker1".localeCompare("hacker2")) {
+ if(hacker1.localeCompare(hacker2)) {
    console.log(`The driver's name ${hacker1} goes first`);
  }
- else if("hacker2".localeCompare("hacker1")) {
+ else if(hacker2.localeCompare(hacker1)) {
    console.log(`Yo, the navigator ${hacker2} goes first definitely`);
  }
  else{
